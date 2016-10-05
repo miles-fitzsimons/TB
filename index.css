@@ -1,0 +1,43 @@
+* {
+  /*border: solid red 1px;*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.app {
+  height: 100vh;
+  background-image: url("public/background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar {
+  background-color: #666666;
+  height: 85%;
+  width: 19%;
+  position: absolute;
+  left: 9%;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 17% 7% 4%;
+  border-bottom: 2px #000000 solid;
+  padding-bottom: 4%;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  text-align: left;
+  font-size: 1em;
+}
