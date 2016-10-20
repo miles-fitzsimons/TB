@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Sidebar from './Sidebar'
+import React, { Component } from 'react';
+import SidebarContainer from '../containers/SidebarContainer';
 
 class App extends Component {
 
@@ -10,11 +10,12 @@ class App extends Component {
   render () {
     return(
       <div className="app">
-        <Sidebar />
+        <SidebarContainer />
+        <p className="builtByNobody">&copy; Built by <a className="nobody" href="mailto:miles.fitzsimons@gmail.com">Nobody</a></p>
       </div>
     )
   }
 
 }
 
-export default App
+export default App;

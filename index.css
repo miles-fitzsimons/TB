@@ -1,10 +1,8 @@
 * {
-  /*border: solid red 1px;*/
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  text-align: center;
 }
 
 body {
@@ -16,28 +14,83 @@ body {
   background-image: url("public/background.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   background-color: #666666;
-  height: 85%;
   width: 19%;
   position: absolute;
   left: 9%;
 }
 
-h1 {
+.name {
+  text-align: center;
   font-size: 1.5em;
   margin: 17% 7% 4%;
   border-bottom: 2px #000000 solid;
   padding-bottom: 4%;
 }
 
-h2 {
+.title {
+  text-align: center;
   font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
-h3 {
+.submenuTitleContainer {
+  display: inline-flex;
+  align-items: center;
+}
+
+.submenuTitle {
   text-align: left;
   font-size: 1em;
+  padding: 1vw 0vw 1.2vw;
+}
+
+.submenuTitle:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.triangle {
+  width: 15%;
+  height: 15%;
+  padding-left: 0.5vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.submenuItem {
+  padding-left: 3.5vw;
+  font-size: 1.5vh;
+}
+
+.submenuItem:hover {
+  text-decoration: underline;
+}
+
+.submenuItem:last-child {
+  padding-bottom: 0.5vh;
+}
+
+.builtByNobody {
+  margin-bottom: 1vh;
+  font-size: 1.7vh;
+}
+
+.nobody {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nobody:hover {
+  text-decoration: line-through;
 }
