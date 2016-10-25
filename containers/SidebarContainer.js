@@ -2,7 +2,11 @@ import { connect } from 'react-redux';
 import Sidebar from '../components/Sidebar';
 
 var mapStateToProps = state => {
-  return state;
+  return {
+    showVideoSubmenu: state.showVideoSubmenu,
+    showStillSubmenu: state.showStillSubmenu,
+    showContactSubmenu: state.showContactSubmenu,
+  };
 }
 
 var mapDispatchToProps = dispatch => {

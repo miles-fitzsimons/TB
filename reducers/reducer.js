@@ -1,14 +1,18 @@
 const INITIAL_STATE = {
   showVideoSubmenu: false,
   showStillSubmenu: false,
-  showContactSubmenu: false
+  showContactSubmenu: false,
+  showModal: false,
+  modalData: {}
 };
 
 var cloneState = state => {
   return {
     showVideoSubmenu: state.showVideoSubmenu,
     showStillSubmenu: state.showStillSubmenu,
-    showContactSubmenu: state.showContactSubmenu
+    showContactSubmenu: state.showContactSubmenu,
+    showModal: state.showModal,
+    modalData: Object.assign({}, state.modalData)
   }
 }
 
@@ -26,6 +30,14 @@ const reducer = (state = INITIAL_STATE, action) => {
 
     case 'toggleContactSubmenu':
       newState.showContactSubmenu = !state.showContactSubmenu;
+      return newState;
+
+    case 'toggleShowModal':
+      newState.showModal = !state.showModal;
+      return newState;
+
+    case 'updateModalData':
+      newState.modalData = action.payload;
       return newState;
 
   }

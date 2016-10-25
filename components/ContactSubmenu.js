@@ -8,7 +8,7 @@ class ContactSubmenu extends Component {
 
   render () {
     return(
-      <div style={this.props.showContactSubmenu ? {display: 'initial'} : {display: 'none'}}>
+      <div>
         <ul>
           <li className="submenuItem">some.email@gmail.com</li>
           <li className="submenuItem">+64 22 123 4567</li>
